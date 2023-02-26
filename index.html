@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- tailwind css -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="grid sm:justify-center sm:content-center min-h-screen">
+
+    <div class="flex flex-col sm:flex-row rounded-3xl sm:shadow-xl">
+      <div
+        class="sm:w-64 bg-gradient-to-b from-[hsl(252,100%,67%)] to-[hsl(241,81%,54%)] sm:rounded-3xl rounded-b-3xl text-white py-2 pb-10 text-center">
+
+        <h1 class="text-blue-100 mb-1 mt-4">Your Result</h1>
+
+        <div class="h-48 flex items-center justify-center mt-5 mb-1">
+          <div
+            class="h-48 w-48 rounded-full flex flex-col items-center justify-center bg-gradient-to-b from-[hsla(256,72%,46%,1)] to-[hsla(241,72%,46%,0)]">
+            <p class="text-4xl font-extrabold">76</p>
+            <p class="text-sm text-indigo-200 tracking-tighter">of 100</p>
+          </div>
+        </div>
+
+        <p class="text-2xl font-bold py-4">Great</p>
+        <p class="sm:text-xs text-gray-300 px-10 my-2">You scored higher than 65% of the people who have taken these
+          tests.</p>
+      </div>
+
+      <div class="relative sm:w-64 px-8 py-2 pb-20 grow">
+
+        <h2 class="font-bold mt-4 mb-1">Summary</h2>
+
+        <div class="space-y-2 my-4 text-sm">
+          <div class="flex justify-between bg-red-200 p-2.5 overflow-hidden rounded-lg">
+            <div>
+              <img src="assets/images/icon-reaction.svg" class="max-w-full mr-2 float-left" alt="" />
+              <h3 class="float-left">Reaction</h3>
+            </div>
+            <p>80 <span class="text-gray-500">/ 100</span></p>
+          </div>
+
+          <div class="flex justify-between bg-yellow-200 p-2.5 overflow-hidden rounded-lg">
+            <div>
+              <img src="assets/images/icon-memory.svg" class="max-w-full mr-2 float-left" alt="" />
+              <h3 class="float-left">Memory</h3>
+            </div>
+            <p>92 <span class="text-gray-500">/ 100</span></p>
+          </div>
+
+          <div class="flex justify-between bg-green-200 p-2.5 overflow-hidden rounded-lg">
+            <div>
+              <img src="assets/images/icon-verbal.svg" class="max-w-full mr-2 float-left" alt="" />
+              <h3 class="float-left">Verbal</h3>
+            </div>
+            <p>61 <span class="text-gray-500">/ 100</span></p>
+          </div>
+
+          <div class="flex justify-between bg-blue-200 p-2.5 overflow-hidden rounded-lg">
+            <div>
+              <img src="assets/images/icon-visual.svg" class="max-w-full mr-2 float-left" alt="" />
+              <h3 class="float-left">Visual</h3>
+            </div>
+            <p>72 <span class="text-gray-500">/ 100</span></p>
+          </div>
+        </div>
+
+        <div>
+          <!-- bg-gradient-to-b from-[hsl(252,100%,67%)] to-[hsl(241,81%,54%)] -->
+          <button
+            class="bg-indigo-500 hover:bg-stone-500 text-white text-sm pt-2 pb-3 rounded-full absolute sm:bottom-8 bottom-4 right-8 left-8">Continue</button>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://anik-das-portfolio.netlify.app/">Anik Das</a>.
+  </footer>
+</body>
+
+</html>
